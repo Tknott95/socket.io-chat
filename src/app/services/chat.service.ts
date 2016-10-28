@@ -2,6 +2,7 @@ import { SocketIoChatPage } from './../../../e2e/app.po';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
+import * as io from '../../vendor/socket.io-client/socket.io';
 
 export class ChatService {
     private url = 'http://localhost:8000';
